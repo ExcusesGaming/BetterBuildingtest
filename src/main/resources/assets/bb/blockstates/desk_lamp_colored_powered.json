@@ -1,0 +1,20 @@
+{
+  "variants": {
+    "lampshade=0": { "model": "bb:block/lights/desklamp/desk_lamp_on_white" },
+    "lampshade=1": { "model": "bb:block/lights/desklamp/desk_lamp_on_orange" },
+    "lampshade=2": { "model": "bb:block/lights/desklamp/desk_lamp_on_magenta" },
+    "lampshade=3": { "model": "bb:block/lights/desklamp/desk_lamp_on_light_blue" },
+    "lampshade=4": { "model": "bb:block/lights/desklamp/desk_lamp_on_yellow" },
+    "lampshade=5": { "model": "bb:block/lights/desklamp/desk_lamp_on_lime" },
+    "lampshade=6": { "model": "bb:block/lights/desklamp/desk_lamp_on_pink" },
+    "lampshade=7": { "model": "bb:block/lights/desklamp/desk_lamp_on_gray" },
+    "lampshade=8": { "model": "bb:block/lights/desklamp/desk_lamp_on_light_gray" },
+    "lampshade=9": { "model": "bb:block/lights/desklamp/desk_lamp_on_cyan" },
+    "lampshade=10": { "model": "bb:block/lights/desklamp/desk_lamp_on_purple" },
+    "lampshade=11": { "model": "bb:block/lights/desklamp/desk_lamp_on_blue" },
+    "lampshade=12": { "model": "bb:block/lights/desklamp/desk_lamp_on_brown" },
+    "lampshade=13": { "model": "bb:block/lights/desklamp/desk_lamp_on_green" },
+    "lampshade=14": { "model": "bb:block/lights/desklamp/desk_lamp_on_red" },
+    "lampshade=15": { "model": "bb:block/lights/desklamp/desk_lamp_on_black" }
+  }
+}

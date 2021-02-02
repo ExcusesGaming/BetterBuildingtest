@@ -1,0 +1,22 @@
+{
+	"credit": "Made with Blockbench",
+	"textures": {
+		"1": "bb:blocks/vanilla/black_concrete",
+		"particle": "bb:blocks/framing_block"
+	},
+	"elements": [
+		{
+			"from": [0, 0, 10],
+			"to": [9, 16, 11],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 8, 18]},
+			"faces": {
+				"north": {"uv": [0, 0, 9, 16], "texture": "#1"},
+				"east": {"uv": [9, 0, 10, 16], "texture": "#1"},
+				"south": {"uv": [7, 0, 16, 16], "texture": "#1"},
+				"west": {"uv": [9, 0, 10, 16], "texture": "#1"},
+				"up": {"uv": [0, 9, 9, 10], "texture": "#1"},
+				"down": {"uv": [7, 9, 16, 10], "texture": "#1"}
+			}
+		}
+	]
+}

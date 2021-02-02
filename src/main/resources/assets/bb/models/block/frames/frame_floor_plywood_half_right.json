@@ -1,0 +1,22 @@
+{
+	"credit": "Made with Blockbench",
+	"textures": {
+		"1": "bb:blocks/plywood",
+		"particle": "bb:blocks/framing_block"
+	},
+	"elements": [
+		{
+			"from": [8, 1, 9],
+			"to": [16, 15, 10],
+			"rotation": {"angle": 0, "axis": "y", "origin": [15, 9, 17]},
+			"faces": {
+				"north": {"uv": [0, 1, 8, 15], "texture": "#1"},
+				"east": {"uv": [9, 1, 10, 15], "texture": "#1"},
+				"south": {"uv": [8, 1, 16, 15], "texture": "#1"},
+				"west": {"uv": [9, 1, 10, 15], "texture": "#1"},
+				"up": {"uv": [0, 9, 8, 10], "texture": "#1"},
+				"down": {"uv": [0, 0, 8, 1], "texture": "#1"}
+			}
+		}
+	]
+}

@@ -1,0 +1,253 @@
+{
+  "multipart": [
+    {"apply": {"model": "bb:block/frames/frame_base"}},
+    {"when": {"north": "true"},
+    "apply": {"model": "bb:block/frames/frame_connector_bottom", "uvlock":  true}
+    },
+    {"when": {"north": "true"},
+      "apply": {"model": "bb:block/frames/frame_connector_top", "uvlock":  true}
+    },
+    {"when": {"north": "true"},
+      "apply": {"model": "bb:block/frames/frame_full_plywood_half_left","y": 90, "uvlock":  true}
+    },
+    {"when": {"north": "true"},
+      "apply": {"model": "bb:block/frames/frame_full_plywood_half_right","y": 270, "uvlock":  true}
+    },
+    {"when": {"south": "true"},
+      "apply": {"model": "bb:block/frames/frame_connector_bottom","y": 180, "uvlock":  true}
+    },
+    {"when": {"south": "true"},
+      "apply": {"model": "bb:block/frames/frame_connector_top","y": 180, "uvlock":  true}
+    },
+    {"when": {"south": "true"},
+      "apply": {"model": "bb:block/frames/frame_full_plywood_half_right","y": 90, "uvlock":  true}
+    },
+    {"when": {"south": "true"},
+      "apply": {"model": "bb:block/frames/frame_full_plywood_half_left","y": 270, "uvlock":  true}
+    },
+    {"when": {"east": "true"},
+      "apply": {"model": "bb:block/frames/frame_connector_bottom","y": 90, "uvlock":  true}
+    },
+    {"when": {"east": "true"},
+      "apply": {"model": "bb:block/frames/frame_connector_top","y": 90, "uvlock":  true}
+    },
+    {"when": {"east": "true"},
+      "apply": {"model": "bb:block/frames/frame_full_plywood_half_left","y": 180, "uvlock":  true}
+    },
+    {"when": {"east": "true"},
+      "apply": {"model": "bb:block/frames/frame_full_plywood_half_right", "uvlock":  true}
+    },
+    {"when": {"west": "true"},
+      "apply": {"model": "bb:block/frames/frame_connector_bottom","y": 270, "uvlock":  true}
+    },
+    {"when": {"west": "true"},
+      "apply": {"model": "bb:block/frames/frame_connector_top","y": 270, "uvlock":  true}
+    },
+    {"when": {"west": "true"},
+      "apply": {"model": "bb:block/frames/frame_full_plywood_half_left", "uvlock":  true}
+    },
+    {"when": {"west": "true"},
+      "apply": {"model": "bb:block/frames/frame_full_plywood_half_right","y": 180, "uvlock":  true}
+    },
+
+    {"when": {"north": "true", "oneast": 0},
+      "apply": {"model": "bb:block/frames/sheetrock/frame_sheetrock_white_half_left","y": 90, "uvlock":  true}
+    },
+    {"when": {"north": "true", "onwest": 0},
+      "apply": {"model": "bb:block/frames/sheetrock/frame_sheetrock_white_half_right","y": 270, "uvlock":  true}
+    },
+    {"when": {"south": "true", "onwest": 0},
+      "apply": {"model": "bb:block/frames/sheetrock/frame_sheetrock_white_half_left","y": 270, "uvlock":  true}
+    },
+    {"when": {"south": "true", "oneast": 0},
+      "apply": {"model": "bb:block/frames/sheetrock/frame_sheetrock_white_half_right","y": 90, "uvlock":  true}
+    },
+    {"when": {"east": "true", "onsouth": 0},
+      "apply": {"model": "bb:block/frames/sheetrock/frame_sheetrock_white_half_left","y": 180, "uvlock":  true}
+    },
+    {"when": {"east": "true", "onnorth": 0},
+      "apply": {"model": "bb:block/frames/sheetrock/frame_sheetrock_white_half_right","y": 0, "uvlock":  true}
+    },
+    {"when": {"west": "true", "onnorth": 0},
+      "apply": {"model": "bb:block/frames/sheetrock/frame_sheetrock_white_half_left","y": 0, "uvlock":  true}
+    },
+    {"when": {"west": "true", "onsouth": 0},
+      "apply": {"model": "bb:block/frames/sheetrock/frame_sheetrock_white_half_right","y": 180, "uvlock":  true}
+    },
+
+    {"when": {"north": "true", "oneast": 1},
+      "apply": {"model": "bb:block/frames/sheetrock/frame_sheetrock_yellow_half_left","y": 90, "uvlock":  true}
+    },
+    {"when": {"north": "true", "onwest": 1},
+      "apply": {"model": "bb:block/frames/sheetrock/frame_sheetrock_yellow_half_right","y": 270, "uvlock":  true}
+    },
+    {"when": {"south": "true", "onwest": 1},
+      "apply": {"model": "bb:block/frames/sheetrock/frame_sheetrock_yellow_half_left","y": 270, "uvlock":  true}
+    },
+    {"when": {"south": "true", "oneast": 1},
+      "apply": {"model": "bb:block/frames/sheetrock/frame_sheetrock_yellow_half_right","y": 90, "uvlock":  true}
+    },
+    {"when": {"east": "true", "onsouth": 1},
+      "apply": {"model": "bb:block/frames/sheetrock/frame_sheetrock_yellow_half_left","y": 180, "uvlock":  true}
+    },
+    {"when": {"east": "true", "onnorth": 1},
+      "apply": {"model": "bb:block/frames/sheetrock/frame_sheetrock_yellow_half_right","y": 0, "uvlock":  true}
+    },
+    {"when": {"west": "true", "onnorth": 1},
+      "apply": {"model": "bb:block/frames/sheetrock/frame_sheetrock_yellow_half_left","y": 0, "uvlock":  true}
+    },
+    {"when": {"west": "true", "onsouth": 1},
+      "apply": {"model": "bb:block/frames/sheetrock/frame_sheetrock_yellow_half_right","y": 180, "uvlock":  true}
+    },
+
+    {"when": {"north": "true", "oneast": 2},
+      "apply": {"model": "bb:block/frames/sheetrock/frame_sheetrock_gray_half_left","y": 90, "uvlock":  true}
+    },
+    {"when": {"north": "true", "onwest": 2},
+      "apply": {"model": "bb:block/frames/sheetrock/frame_sheetrock_gray_half_right","y": 270, "uvlock":  true}
+    },
+    {"when": {"south": "true", "onwest": 2},
+      "apply": {"model": "bb:block/frames/sheetrock/frame_sheetrock_gray_half_left","y": 270, "uvlock":  true}
+    },
+    {"when": {"south": "true", "oneast": 2},
+      "apply": {"model": "bb:block/frames/sheetrock/frame_sheetrock_gray_half_right","y": 90, "uvlock":  true}
+    },
+    {"when": {"east": "true", "onsouth": 2},
+      "apply": {"model": "bb:block/frames/sheetrock/frame_sheetrock_gray_half_left","y": 180, "uvlock":  true}
+    },
+    {"when": {"east": "true", "onnorth": 2},
+      "apply": {"model": "bb:block/frames/sheetrock/frame_sheetrock_gray_half_right","y": 0, "uvlock":  true}
+    },
+    {"when": {"west": "true", "onnorth": 2},
+      "apply": {"model": "bb:block/frames/sheetrock/frame_sheetrock_gray_half_left","y": 0, "uvlock":  true}
+    },
+    {"when": {"west": "true", "onsouth": 2},
+      "apply": {"model": "bb:block/frames/sheetrock/frame_sheetrock_gray_half_right","y": 180, "uvlock":  true}
+    },
+
+    {"when": {"north": "true", "oneast": 3},
+      "apply": {"model": "bb:block/frames/sheetrock/frame_sheetrock_light_gray_half_left","y": 90, "uvlock":  true}
+    },
+    {"when": {"north": "true", "onwest": 3},
+      "apply": {"model": "bb:block/frames/sheetrock/frame_sheetrock_light_gray_half_right","y": 270, "uvlock":  true}
+    },
+    {"when": {"south": "true", "onwest": 3},
+      "apply": {"model": "bb:block/frames/sheetrock/frame_sheetrock_light_gray_half_left","y": 270, "uvlock":  true}
+    },
+    {"when": {"south": "true", "oneast": 3},
+      "apply": {"model": "bb:block/frames/sheetrock/frame_sheetrock_light_gray_half_right","y": 90, "uvlock":  true}
+    },
+    {"when": {"east": "true", "onsouth": 3},
+      "apply": {"model": "bb:block/frames/sheetrock/frame_sheetrock_light_gray_half_left","y": 180, "uvlock":  true}
+    },
+    {"when": {"east": "true", "onnorth": 3},
+      "apply": {"model": "bb:block/frames/sheetrock/frame_sheetrock_light_gray_half_right","y": 0, "uvlock":  true}
+    },
+    {"when": {"west": "true", "onnorth": 3},
+      "apply": {"model": "bb:block/frames/sheetrock/frame_sheetrock_light_gray_half_left","y": 0, "uvlock":  true}
+    },
+    {"when": {"west": "true", "onsouth": 3},
+      "apply": {"model": "bb:block/frames/sheetrock/frame_sheetrock_light_gray_half_right","y": 180, "uvlock":  true}
+    },
+
+    {"when": {"north": "true", "oneast": 4},
+      "apply": {"model": "bb:block/frames/sheetrock/frame_sheetrock_blue_half_left","y": 90, "uvlock":  true}
+    },
+    {"when": {"north": "true", "onwest": 4},
+      "apply": {"model": "bb:block/frames/sheetrock/frame_sheetrock_blue_half_right","y": 270, "uvlock":  true}
+    },
+    {"when": {"south": "true", "onwest": 4},
+      "apply": {"model": "bb:block/frames/sheetrock/frame_sheetrock_blue_half_left","y": 270, "uvlock":  true}
+    },
+    {"when": {"south": "true", "oneast": 4},
+      "apply": {"model": "bb:block/frames/sheetrock/frame_sheetrock_blue_half_right","y": 90, "uvlock":  true}
+    },
+    {"when": {"east": "true", "onsouth": 4},
+      "apply": {"model": "bb:block/frames/sheetrock/frame_sheetrock_blue_half_left","y": 180, "uvlock":  true}
+    },
+    {"when": {"east": "true", "onnorth": 4},
+      "apply": {"model": "bb:block/frames/sheetrock/frame_sheetrock_blue_half_right","y": 0, "uvlock":  true}
+    },
+    {"when": {"west": "true", "onnorth": 4},
+      "apply": {"model": "bb:block/frames/sheetrock/frame_sheetrock_blue_half_left","y": 0, "uvlock":  true}
+    },
+    {"when": {"west": "true", "onsouth": 4},
+      "apply": {"model": "bb:block/frames/sheetrock/frame_sheetrock_blue_half_right","y": 180, "uvlock":  true}
+    },
+
+    {"when": {"north": "true", "oneast": 5},
+      "apply": {"model": "bb:block/frames/sheetrock/frame_sheetrock_green_half_left","y": 90, "uvlock":  true}
+    },
+    {"when": {"north": "true", "onwest": 5},
+      "apply": {"model": "bb:block/frames/sheetrock/frame_sheetrock_green_half_right","y": 270, "uvlock":  true}
+    },
+    {"when": {"south": "true", "onwest": 5},
+      "apply": {"model": "bb:block/frames/sheetrock/frame_sheetrock_green_half_left","y": 270, "uvlock":  true}
+    },
+    {"when": {"south": "true", "oneast": 5},
+      "apply": {"model": "bb:block/frames/sheetrock/frame_sheetrock_green_half_right","y": 90, "uvlock":  true}
+    },
+    {"when": {"east": "true", "onsouth": 5},
+      "apply": {"model": "bb:block/frames/sheetrock/frame_sheetrock_green_half_left","y": 180, "uvlock":  true}
+    },
+    {"when": {"east": "true", "onnorth": 5},
+      "apply": {"model": "bb:block/frames/sheetrock/frame_sheetrock_green_half_right","y": 0, "uvlock":  true}
+    },
+    {"when": {"west": "true", "onnorth": 5},
+      "apply": {"model": "bb:block/frames/sheetrock/frame_sheetrock_green_half_left","y": 0, "uvlock":  true}
+    },
+    {"when": {"west": "true", "onsouth": 5},
+      "apply": {"model": "bb:block/frames/sheetrock/frame_sheetrock_green_half_right","y": 180, "uvlock":  true}
+    },
+
+    {"when": {"north": "true", "oneast": 6},
+      "apply": {"model": "bb:block/frames/sheetrock/frame_sheetrock_red_half_left","y": 90, "uvlock":  true}
+    },
+    {"when": {"north": "true", "onwest": 6},
+      "apply": {"model": "bb:block/frames/sheetrock/frame_sheetrock_red_half_right","y": 270, "uvlock":  true}
+    },
+    {"when": {"south": "true", "onwest": 6},
+      "apply": {"model": "bb:block/frames/sheetrock/frame_sheetrock_red_half_left","y": 270, "uvlock":  true}
+    },
+    {"when": {"south": "true", "oneast": 6},
+      "apply": {"model": "bb:block/frames/sheetrock/frame_sheetrock_red_half_right","y": 90, "uvlock":  true}
+    },
+    {"when": {"east": "true", "onsouth": 6},
+      "apply": {"model": "bb:block/frames/sheetrock/frame_sheetrock_red_half_left","y": 180, "uvlock":  true}
+    },
+    {"when": {"east": "true", "onnorth": 6},
+      "apply": {"model": "bb:block/frames/sheetrock/frame_sheetrock_red_half_right","y": 0, "uvlock":  true}
+    },
+    {"when": {"west": "true", "onnorth": 6},
+      "apply": {"model": "bb:block/frames/sheetrock/frame_sheetrock_red_half_left","y": 0, "uvlock":  true}
+    },
+    {"when": {"west": "true", "onsouth": 6},
+      "apply": {"model": "bb:block/frames/sheetrock/frame_sheetrock_red_half_right","y": 180, "uvlock":  true}
+    },
+
+    {"when": {"north": "true", "oneast": 7},
+      "apply": {"model": "bb:block/frames/sheetrock/frame_sheetrock_black_half_left","y": 90, "uvlock":  true}
+    },
+    {"when": {"north": "true", "onwest": 7},
+      "apply": {"model": "bb:block/frames/sheetrock/frame_sheetrock_black_half_right","y": 270, "uvlock":  true}
+    },
+    {"when": {"south": "true", "onwest": 7},
+      "apply": {"model": "bb:block/frames/sheetrock/frame_sheetrock_black_half_left","y": 270, "uvlock":  true}
+    },
+    {"when": {"south": "true", "oneast": 7},
+      "apply": {"model": "bb:block/frames/sheetrock/frame_sheetrock_black_half_right","y": 90, "uvlock":  true}
+    },
+    {"when": {"east": "true", "onsouth": 7},
+      "apply": {"model": "bb:block/frames/sheetrock/frame_sheetrock_black_half_left","y": 180, "uvlock":  true}
+    },
+    {"when": {"east": "true", "onnorth": 7},
+      "apply": {"model": "bb:block/frames/sheetrock/frame_sheetrock_black_half_right","y": 0, "uvlock":  true}
+    },
+    {"when": {"west": "true", "onnorth": 7},
+      "apply": {"model": "bb:block/frames/sheetrock/frame_sheetrock_black_half_left","y": 0, "uvlock":  true}
+    },
+    {"when": {"west": "true", "onsouth": 7},
+      "apply": {"model": "bb:block/frames/sheetrock/frame_sheetrock_black_half_right","y": 180, "uvlock":  true}
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "#minecraft:wooden_fences",
+    "bb:framing_block",
+    "bb:window_block_basic",
+    "bb:door_bottom",
+    "bb:pocketdoor_bottom",
+    "bb:pocketdoorframe_bottom"
+  ]
+}

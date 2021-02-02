@@ -1,0 +1,6 @@
+{
+  "variants": {
+    "hardened=false": { "model": "bb:block/ceiling_light_off" },
+    "hardened=true": { "model": "bb:block/ceiling_light_on" }
+  }
+}

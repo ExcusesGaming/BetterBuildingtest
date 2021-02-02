@@ -1,0 +1,135 @@
+{
+  "multipart": [
+    {"when": {"plywoodvertical": false},
+    "apply": {"model": "bb:block/frames/frame_base"}
+    },
+    {"when": {"north": "true","plywoodvertical": false},
+    "apply": {"model": "bb:block/frames/frame_connector_bottom", "uvlock":  true}
+    },
+    {"when": {"north": "true","plywoodvertical": false},
+      "apply": {"model": "bb:block/frames/frame_connector_top", "uvlock":  true}
+    },
+    {"when": {"north": "true", "plywood": true,"plywoodvertical": false},
+      "apply": {"model": "bb:block/frames/frame_full_plywood_half_left","y": 90, "uvlock":  true}
+    },
+    {"when": {"north": "true", "plywood": true,"plywoodvertical": false},
+      "apply": {"model": "bb:block/frames/frame_full_plywood_half_right","y": 270, "uvlock":  true}
+    },
+    {"when": {"south": "true","plywoodvertical": false},
+      "apply": {"model": "bb:block/frames/frame_connector_bottom","y": 180, "uvlock":  true}
+    },
+    {"when": {"south": "true","plywoodvertical": false},
+      "apply": {"model": "bb:block/frames/frame_connector_top","y": 180, "uvlock":  true}
+    },
+    {"when": {"south": "true", "plywood": true,"plywoodvertical": false},
+      "apply": {"model": "bb:block/frames/frame_full_plywood_half_right","y": 90, "uvlock":  true}
+    },
+    {"when": {"south": "true", "plywood": true,"plywoodvertical": false},
+      "apply": {"model": "bb:block/frames/frame_full_plywood_half_left","y": 270, "uvlock":  true}
+    },
+    {"when": {"east": "true","plywoodvertical": false},
+      "apply": {"model": "bb:block/frames/frame_connector_bottom","y": 90, "uvlock":  true}
+    },
+    {"when": {"east": "true","plywoodvertical": false},
+      "apply": {"model": "bb:block/frames/frame_connector_top","y": 90, "uvlock":  true}
+    },
+    {"when": {"east": "true", "plywood": true,"plywoodvertical": false},
+      "apply": {"model": "bb:block/frames/frame_full_plywood_half_left","y": 180, "uvlock":  true}
+    },
+    {"when": {"east": "true", "plywood": true,"plywoodvertical": false},
+      "apply": {"model": "bb:block/frames/frame_full_plywood_half_right", "uvlock":  true}
+    },
+    {"when": {"west": "true","plywoodvertical": false},
+      "apply": {"model": "bb:block/frames/frame_connector_bottom","y": 270, "uvlock":  true}
+    },
+    {"when": {"west": "true","plywoodvertical": false},
+      "apply": {"model": "bb:block/frames/frame_connector_top","y": 270, "uvlock":  true}
+    },
+    {"when": {"west": "true", "plywood": true,"plywoodvertical": false},
+      "apply": {"model": "bb:block/frames/frame_full_plywood_half_left", "uvlock":  true}
+    },
+    {"when": {"west": "true", "plywood": true,"plywoodvertical": false},
+      "apply": {"model": "bb:block/frames/frame_full_plywood_half_right","y": 180, "uvlock":  true}
+    },
+
+
+    {"when": {"plywoodvertical": true},
+      "apply": {"model": "bb:block/frames/frame_floor_base"}
+    },
+    {"when": {"north": "true","plywoodvertical": true},
+      "apply": {"model": "bb:block/frames/frame_floor_connector_bottom", "uvlock":  true}
+    },
+    {"when": {"north": "true","plywoodvertical": true},
+      "apply": {"model": "bb:block/frames/frame_floor_connector_top", "uvlock":  true}
+    },
+    {"when": {"north": "true", "plywood": true,"plywoodvertical": true},
+      "apply": {"model": "bb:block/frames/frame_floor_plywood_half_left","y": 90, "uvlock":  true}
+    },
+    {"when": {"north": "true", "plywood": true,"plywoodvertical": true},
+      "apply": {"model": "bb:block/frames/frame_floor_plywood_half_right","y": 270, "uvlock":  true}
+    },
+    {"when": {"south": "true","plywoodvertical": true},
+      "apply": {"model": "bb:block/frames/frame_floor_connector_bottom","y": 180, "uvlock":  true}
+    },
+    {"when": {"south": "true","plywoodvertical": true},
+      "apply": {"model": "bb:block/frames/frame_floor_connector_top","y": 180, "uvlock":  true}
+    },
+    {"when": {"south": "true", "plywood": true,"plywoodvertical": true},
+      "apply": {"model": "bb:block/frames/frame_floor_plywood_half_right","y": 90, "uvlock":  true}
+    },
+    {"when": {"south": "true", "plywood": true,"plywoodvertical": true},
+      "apply": {"model": "bb:block/frames/frame_floor_plywood_half_left","y": 270, "uvlock":  true}
+    },
+    {"when": {"east": "true","plywoodvertical": true},
+      "apply": {"model": "bb:block/frames/frame_floor_connector_bottom","y": 90, "uvlock":  true}
+    },
+    {"when": {"east": "true","plywoodvertical": true},
+      "apply": {"model": "bb:block/frames/frame_floor_connector_top","y": 90, "uvlock":  true}
+    },
+    {"when": {"east": "true", "plywood": true,"plywoodvertical": true},
+      "apply": {"model": "bb:block/frames/frame_floor_plywood_half_left","y": 180, "uvlock":  true}
+    },
+    {"when": {"east": "true", "plywood": true,"plywoodvertical": true},
+      "apply": {"model": "bb:block/frames/frame_floor_plywood_half_right", "uvlock":  true}
+    },
+    {"when": {"west": "true","plywoodvertical": true},
+      "apply": {"model": "bb:block/frames/frame_floor_connector_bottom","y": 270, "uvlock":  true}
+    },
+    {"when": {"west": "true","plywoodvertical": true},
+      "apply": {"model": "bb:block/frames/frame_floor_connector_top","y": 270, "uvlock":  true}
+    },
+    {"when": {"west": "true", "plywood": true,"plywoodvertical": true},
+      "apply": {"model": "bb:block/frames/frame_floor_plywood_half_left", "uvlock":  true}
+    },
+    {"when": {"west": "true", "plywood": true,"plywoodvertical": true},
+      "apply": {"model": "bb:block/frames/frame_floor_plywood_half_right","y": 180, "uvlock":  true}
+    },
+
+
+
+    {"when": {"north": "true","east": "true","plywoodvertical": true},
+      "apply": {"model": "bb:block/plywood_top", "uvlock":  true}
+    },
+    {"when": {"north": "true","east": "true","plywoodvertical": true},
+      "apply": {"model": "bb:block/plywood_bottom", "uvlock":  true}
+    },
+    {"when": {"north": "true","west": "true","plywoodvertical": true},
+      "apply": {"model": "bb:block/plywood_top","y": 270, "uvlock":  true}
+    },
+    {"when": {"north": "true","west": "true","plywoodvertical": true},
+      "apply": {"model": "bb:block/plywood_bottom","y": 270, "uvlock":  true}
+    },
+    {"when": {"south": "true","east": "true","plywoodvertical": true},
+      "apply": {"model": "bb:block/plywood_top","y": 90, "uvlock":  true}
+    },
+    {"when": {"south": "true","east": "true","plywoodvertical": true},
+      "apply": {"model": "bb:block/plywood_bottom","y": 90, "uvlock":  true}
+    },
+    {"when": {"south": "true","west": "true","plywoodvertical": true},
+      "apply": {"model": "bb:block/plywood_top","y": 180, "uvlock":  true}
+    },
+    {"when": {"south": "true","west": "true","plywoodvertical": true},
+      "apply": {"model": "bb:block/plywood_bottom","y": 180, "uvlock":  true}
+    }
+  ]
+}

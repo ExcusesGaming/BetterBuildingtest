@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "bb",
+  "version": "${version}",
+
+  "name": "Better Building",
+  "description": "This is an example description! Tell everyone what your mod is about!",
+  "authors": [
+    "Excuses"
+  ],
+  "contact": {
+    "homepage": "",
+    "sources": ""
+  },
+
+  "license": "CC0-1.0",
+  "icon": "assets/bb/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.excuses.betterbuilding.BetterBuilding"
+    ],
+    "client": [
+      "com.excuses.betterbuilding.BetterBuildingClient"
+    ]
+  },
+  "mixins": [
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.7.4",
+    "fabric": "*",
+    "minecraft": "1.16.x"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
