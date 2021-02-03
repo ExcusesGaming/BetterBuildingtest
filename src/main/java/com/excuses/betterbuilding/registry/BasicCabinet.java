@@ -1,6 +1,6 @@
 package com.excuses.betterbuilding.registry;
 
-import com.excuses.betterbuilding.registry.Entities.Block.TestBlockEntity;
+import com.excuses.betterbuilding.registry.Entities.Block.BasicCabinetBlockEntity;
 import net.minecraft.block.*;
 import net.minecraft.block.entity.BlockEntity;
 import net.minecraft.entity.player.PlayerEntity;
@@ -21,9 +21,9 @@ import net.minecraft.util.shape.VoxelShapes;
 import net.minecraft.world.BlockView;
 import net.minecraft.world.World;
 
-public class TestBlock extends BlockWithEntity {
+public class BasicCabinet extends BlockWithEntity {
 
-    public TestBlock(Settings settings) {
+    public BasicCabinet(Settings settings) {
         super(settings);
     }
 
@@ -37,7 +37,7 @@ public class TestBlock extends BlockWithEntity {
     @Override
     public BlockEntity createBlockEntity(BlockView blockView) {
 
-        return new TestBlockEntity();
+        return new BasicCabinetBlockEntity();
     }
 
     @Override
@@ -67,8 +67,8 @@ public class TestBlock extends BlockWithEntity {
     public void onStateReplaced(BlockState state, World world, BlockPos pos, BlockState newState, boolean moved) {
         if (state.getBlock() != newState.getBlock()) {
             BlockEntity blockEntity = world.getBlockEntity(pos);
-            if (blockEntity instanceof TestBlockEntity) {
-                ItemScatterer.spawn(world, pos, (TestBlockEntity)blockEntity);
+            if (blockEntity instanceof BasicCabinetBlockEntity) {
+                ItemScatterer.spawn(world, pos, (BasicCabinetBlockEntity)blockEntity);
                 // update comparators
                 world.updateComparators(pos,this);
             }
@@ -97,10 +97,13 @@ public class TestBlock extends BlockWithEntity {
         Direction dir = state.get(FACING);
         switch(dir) {
             case NORTH:
+                return VoxelShapes.cuboid(0.0f, 0.0f, -0.3f, 1.0f, 1.0f, 0.6f);
             case SOUTH:
+                return VoxelShapes.cuboid(0.0f, 0.0f, 0.4f, 1.0f, 1.0f, 1.3f);
             case EAST:
+                return VoxelShapes.cuboid(0.4f, 0.0f, 0.0f, 1.3f, 1.0f, 1.0f);
             case WEST:
-                return VoxelShapes.cuboid(0.0f, 0.0f, 0.0f, 1.0f, 1.0f, 1.0f);
+                return VoxelShapes.cuboid(-0.3f, 0.0f, 0.0f, 0.6f, 1.0f, 1.0f);
             default:
                 return VoxelShapes.fullCube();
         }

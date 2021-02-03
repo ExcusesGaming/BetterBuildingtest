@@ -13,6 +13,8 @@ import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
+import static com.excuses.betterbuilding.BetterBuilding.OakCabinet;
+import static com.excuses.betterbuilding.BetterBuilding.SpruceCabinet;
 
 
 public class ModBlocks {
@@ -108,6 +110,22 @@ public class ModBlocks {
             .sounds(BlockSoundGroup.WOOD)
             .dynamicBounds());
 
+    public static final Block BASIC_CABINET_OAK = new BasicCabinet(FabricBlockSettings.of(Material.WOOD)
+            .breakByTool(FabricToolTags.AXES)
+            .requiresTool()
+            .strength(1.0f, 1.0f)
+            .sounds(BlockSoundGroup.WOOD)
+            .nonOpaque()
+            .dynamicBounds());
+
+    public static final Block BASIC_CABINET_SPRUCE = new BasicCabinet(FabricBlockSettings.of(Material.WOOD)
+            .breakByTool(FabricToolTags.AXES)
+            .requiresTool()
+            .strength(1.0f, 1.0f)
+            .sounds(BlockSoundGroup.WOOD)
+            .nonOpaque()
+            .dynamicBounds());
+
 
     public static void registerBlocks() {
         Registry.register(Registry.BLOCK, new Identifier(BetterBuilding.MOD_ID, "framing_block"), FRAMING_BLOCK);
@@ -123,6 +141,9 @@ public class ModBlocks {
         Registry.register(Registry.BLOCK, new Identifier(BetterBuilding.MOD_ID, "desk_lamp_colored_powered"), DESK_LAMP_COLORED_POWERED);
         Registry.register(Registry.BLOCK, new Identifier(BetterBuilding.MOD_ID, "basic_four_leg_table_oak"), BASIC_TABLE_OAK);
         Registry.register(Registry.BLOCK, new Identifier(BetterBuilding.MOD_ID, "basic_four_leg_table_spruce"), BASIC_TABLE_SPRUCE);
+
+        Registry.register(Registry.BLOCK, OakCabinet, BASIC_CABINET_OAK);
+        Registry.register(Registry.BLOCK, SpruceCabinet, BASIC_CABINET_SPRUCE);
 
     }
 }

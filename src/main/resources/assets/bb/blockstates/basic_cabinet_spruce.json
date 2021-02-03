@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": { "model": "bb:block/basic_cabinet_spruce" ,"y": 180, "uvlock":  true},
+    "facing=east": { "model": "bb:block/basic_cabinet_spruce" ,"y": 270, "uvlock":  true},
+    "facing=south": { "model": "bb:block/basic_cabinet_spruce" ,"y": 0, "uvlock":  true},
+    "facing=west": { "model": "bb:block/basic_cabinet_spruce" ,"y": 90, "uvlock":  true}
+  }
+}

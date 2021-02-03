@@ -9,20 +9,20 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.screen.ScreenHandler;
 import net.minecraft.screen.slot.Slot;
 
-public class TestScreenHandler extends ScreenHandler {
+public class BasicCabinetScreenHandler extends ScreenHandler {
     private final Inventory inventory;
 
     //This constructor gets called on the client when the server wants it to open the screenHandler,
     //The client will call the other constructor with an empty Inventory and the screenHandler will automatically
     //sync this empty inventory with the inventory on the server.
-    public TestScreenHandler(int syncId, PlayerInventory playerInventory) {
+    public BasicCabinetScreenHandler(int syncId, PlayerInventory playerInventory) {
         this(syncId, playerInventory, new SimpleInventory(12));
     }
 
     //This constructor gets called from the BlockEntity on the server without calling the other constructor first, the server knows the inventory of the container
     //and can therefore directly provide it as an argument. This inventory will then be synced to the client.
-    public TestScreenHandler(int syncId, PlayerInventory playerInventory, Inventory inventory) {
-        super(BetterBuilding.TEST_SCREEN_HANDLER, syncId);
+    public BasicCabinetScreenHandler(int syncId, PlayerInventory playerInventory, Inventory inventory) {
+        super(BetterBuilding.BASIC_CABINET_SCREEN_HANDLER, syncId);
         checkSize(inventory, 12);
         this.inventory = inventory;
         //some inventories do custom logic when a player opens it.
@@ -35,7 +35,7 @@ public class TestScreenHandler extends ScreenHandler {
         //Our inventory
         for (m = 0; m < 3; ++m) {
             for (l = 0; l < 4; ++l) {
-                this.addSlot(new Slot(inventory, l + m * 3, 53 + l * 18, 17 + m * 18));
+                this.addSlot(new Slot(inventory, l + m * 4, 53 + l * 18, 17 + m * 18));
             }
         }
         //The player inventory

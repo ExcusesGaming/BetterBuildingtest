@@ -8,11 +8,11 @@ import net.minecraft.screen.ScreenHandler;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 
-public class TestScreen extends HandledScreen<ScreenHandler> {
+public class BasicCabinetScreen extends HandledScreen<ScreenHandler> {
     //A path to the gui texture. In this example we use the texture from the dispenser
     private static final Identifier TEXTURE = new Identifier("bb", "textures/gui/basic_cabinet.png");
 
-    public TestScreen(ScreenHandler handler, PlayerInventory inventory, Text title) {
+    public BasicCabinetScreen(ScreenHandler handler, PlayerInventory inventory, Text title) {
         super(handler, inventory, title);
     }
 

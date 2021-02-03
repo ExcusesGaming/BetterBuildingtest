@@ -1,8 +1,8 @@
 package com.excuses.betterbuilding.registry.Entities.Block;
 
+import com.excuses.betterbuilding.registry.BasicCabinetScreenHandler;
 import com.excuses.betterbuilding.registry.ImplementedInventory;
 import com.excuses.betterbuilding.registry.ModBlockEntities;
-import com.excuses.betterbuilding.registry.TestScreenHandler;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.entity.BlockEntity;
 import net.minecraft.entity.player.PlayerEntity;
@@ -16,10 +16,10 @@ import net.minecraft.text.Text;
 import net.minecraft.text.TranslatableText;
 import net.minecraft.util.collection.DefaultedList;
 
-public class TestBlockEntity extends BlockEntity implements NamedScreenHandlerFactory,  ImplementedInventory {
+public class BasicCabinetBlockEntity extends BlockEntity implements NamedScreenHandlerFactory,  ImplementedInventory {
     private final DefaultedList<ItemStack> inventory = DefaultedList.ofSize(12, ItemStack.EMPTY);
-    public TestBlockEntity() {
-        super(ModBlockEntities.TEST_BLOCK_ENTITY);
+    public BasicCabinetBlockEntity() {
+        super(ModBlockEntities.BASIC_CABINET_OAK_BLOCK_ENTITY);
     }
 
     @Override
@@ -36,7 +36,7 @@ public class TestBlockEntity extends BlockEntity implements NamedScreenHandlerFa
     public ScreenHandler createMenu(int syncId, PlayerInventory playerInventory, PlayerEntity player) {
         //We provide *this* to the screenHandler as our class Implements Inventory
         //Only the Server has the Inventory at the start, this will be synced to the client in the ScreenHandler
-        return new TestScreenHandler(syncId, playerInventory, this);
+        return new BasicCabinetScreenHandler(syncId, playerInventory, this);
     }
 
     @Override

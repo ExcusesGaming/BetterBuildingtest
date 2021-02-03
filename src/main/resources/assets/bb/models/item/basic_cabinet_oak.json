@@ -1,5 +1,5 @@
 {
-  "parent": "bb:block/lights/desklamp/desk_lamp_off_white",
+  "parent": "bb:block/blockitemmodels/basic_cabinet_oak",
   "display": {
     "gui": {
       "rotation": [ 30, 45, 0 ],

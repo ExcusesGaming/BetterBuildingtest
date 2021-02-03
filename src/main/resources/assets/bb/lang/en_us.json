@@ -1,6 +1,8 @@
 {
+  "itemGroup.bb.general": "Better Building",
   "item.bb.test": "Test",
   "block.bb.framing_block": "Framing Block",
   "block.bb.framing_block_plywood": "Framing Block Plywood+",
-  "itemGroup.bb.general": "Better Building"
+  "block.bb.basic_cabinet_oak": "Basic Oak Cabinet",
+  "block.bb.basic_cabinet_spruce": "Basic Spruce Cabinet"
 }
