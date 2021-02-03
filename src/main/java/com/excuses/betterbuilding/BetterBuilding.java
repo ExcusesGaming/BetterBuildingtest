@@ -18,7 +18,10 @@ public class BetterBuilding implements ModInitializer {
 
     public static final String MOD_ID = "bb";
     public static final Identifier OakCabinet = new Identifier(MOD_ID, "basic_cabinet_oak");
+    public static final Identifier OakDrawer = new Identifier(MOD_ID, "basic_drawer_oak");
     public static final Identifier SpruceCabinet = new Identifier(MOD_ID, "basic_cabinet_spruce");
+    public static final Identifier BirchCabinet = new Identifier(MOD_ID, "basic_cabinet_birch");
+    public static final Identifier JungleCabinet = new Identifier(MOD_ID, "basic_cabinet_jungle");
 
     public static final ItemGroup ITEM_GROUP = FabricItemGroupBuilder.build(
             new Identifier(MOD_ID, "general"),
@@ -26,8 +29,10 @@ public class BetterBuilding implements ModInitializer {
     );
 
     public static final ScreenHandlerType<BasicCabinetScreenHandler> BASIC_CABINET_SCREEN_HANDLER;
+    public static final ScreenHandlerType<BasicDrawerScreenHandler> BASIC_DRAWER_SCREEN_HANDLER;
     static {
         BASIC_CABINET_SCREEN_HANDLER = ScreenHandlerRegistry.registerSimple(OakCabinet, BasicCabinetScreenHandler::new);
+        BASIC_DRAWER_SCREEN_HANDLER = ScreenHandlerRegistry.registerSimple(OakDrawer, BasicDrawerScreenHandler::new);
     }
 
     private static final Identifier FRAMING_BLOCK_LOOT_TABLE_ID = new Identifier(MOD_ID, "blocks/framing_block");

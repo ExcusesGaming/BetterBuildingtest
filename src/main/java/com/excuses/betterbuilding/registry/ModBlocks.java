@@ -13,8 +13,7 @@ import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
-import static com.excuses.betterbuilding.BetterBuilding.OakCabinet;
-import static com.excuses.betterbuilding.BetterBuilding.SpruceCabinet;
+import static com.excuses.betterbuilding.BetterBuilding.*;
 
 
 public class ModBlocks {
@@ -126,6 +125,30 @@ public class ModBlocks {
             .nonOpaque()
             .dynamicBounds());
 
+    public static final Block BASIC_CABINET_BIRCH = new BasicCabinet(FabricBlockSettings.of(Material.WOOD)
+            .breakByTool(FabricToolTags.AXES)
+            .requiresTool()
+            .strength(1.0f, 1.0f)
+            .sounds(BlockSoundGroup.WOOD)
+            .nonOpaque()
+            .dynamicBounds());
+
+    public static final Block BASIC_CABINET_JUNGLE = new BasicCabinet(FabricBlockSettings.of(Material.WOOD)
+            .breakByTool(FabricToolTags.AXES)
+            .requiresTool()
+            .strength(1.0f, 1.0f)
+            .sounds(BlockSoundGroup.WOOD)
+            .nonOpaque()
+            .dynamicBounds());
+
+    public static final Block BASIC_DRAWER_OAK = new BasicDrawer(FabricBlockSettings.of(Material.WOOD)
+            .breakByTool(FabricToolTags.AXES)
+            .requiresTool()
+            .strength(1.0f, 1.0f)
+            .sounds(BlockSoundGroup.WOOD)
+            .nonOpaque()
+            .dynamicBounds());
+
 
     public static void registerBlocks() {
         Registry.register(Registry.BLOCK, new Identifier(BetterBuilding.MOD_ID, "framing_block"), FRAMING_BLOCK);
@@ -144,6 +167,10 @@ public class ModBlocks {
 
         Registry.register(Registry.BLOCK, OakCabinet, BASIC_CABINET_OAK);
         Registry.register(Registry.BLOCK, SpruceCabinet, BASIC_CABINET_SPRUCE);
+        Registry.register(Registry.BLOCK, BirchCabinet, BASIC_CABINET_BIRCH);
+        Registry.register(Registry.BLOCK, JungleCabinet, BASIC_CABINET_JUNGLE);
+
+        Registry.register(Registry.BLOCK, OakDrawer, BASIC_DRAWER_OAK);
 
     }
 }

@@ -8,8 +8,7 @@ import net.minecraft.item.ToolItem;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
-import static com.excuses.betterbuilding.BetterBuilding.OakCabinet;
-import static com.excuses.betterbuilding.BetterBuilding.SpruceCabinet;
+import static com.excuses.betterbuilding.BetterBuilding.*;
 
 public class ModItems {
     //Items
@@ -49,8 +48,12 @@ public class ModItems {
     public static final BlockItem BASIC_TABLE_OAK = new BlockItem(ModBlocks.BASIC_TABLE_OAK, new Item.Settings().group(BetterBuilding.ITEM_GROUP));
     public static final BlockItem BASIC_TABLE_SPRUCE = new BlockItem(ModBlocks.BASIC_TABLE_SPRUCE, new Item.Settings().group(BetterBuilding.ITEM_GROUP));
 
-    public static final Item BASIC_CABINET_OAK = new BlockItem(ModBlocks.BASIC_CABINET_OAK, new Item.Settings().group(ItemGroup.MISC));
-    public static final Item BASIC_CABINET_SPRUCE = new BlockItem(ModBlocks.BASIC_CABINET_SPRUCE, new Item.Settings().group(ItemGroup.MISC));
+    public static final BlockItem BASIC_CABINET_OAK = new BlockItem(ModBlocks.BASIC_CABINET_OAK, new Item.Settings().group(BetterBuilding.ITEM_GROUP));
+    public static final BlockItem BASIC_CABINET_SPRUCE = new BlockItem(ModBlocks.BASIC_CABINET_SPRUCE, new Item.Settings().group(BetterBuilding.ITEM_GROUP));
+    public static final BlockItem BASIC_CABINET_BIRCH = new BlockItem(ModBlocks.BASIC_CABINET_BIRCH, new Item.Settings().group(BetterBuilding.ITEM_GROUP));
+    public static final BlockItem BASIC_CABINET_JUNGLE = new BlockItem(ModBlocks.BASIC_CABINET_JUNGLE, new Item.Settings().group(BetterBuilding.ITEM_GROUP));
+
+    public static final BlockItem BASIC_DRAWER_OAK = new BlockItem(ModBlocks.BASIC_DRAWER_OAK, new Item.Settings().group(BetterBuilding.ITEM_GROUP));
 
     public static void registerItems(){
         Registry.register(Registry.ITEM, new Identifier(BetterBuilding.MOD_ID,  "plywood"), PLYWOOD);
@@ -90,6 +93,10 @@ public class ModItems {
 
         Registry.register(Registry.ITEM, OakCabinet, BASIC_CABINET_OAK);
         Registry.register(Registry.ITEM, SpruceCabinet, BASIC_CABINET_SPRUCE);
+        Registry.register(Registry.ITEM, BirchCabinet, BASIC_CABINET_BIRCH);
+        Registry.register(Registry.ITEM, JungleCabinet, BASIC_CABINET_JUNGLE);
+
+        Registry.register(Registry.ITEM, OakDrawer, BASIC_DRAWER_OAK);
 
     }
 }
