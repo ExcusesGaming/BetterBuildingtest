@@ -2,8 +2,8 @@
 	"credit": "Made with Blockbench",
 	"textures": {
 		"2": "bb:blocks/vanilla/gray_concrete",
-		"4": "bb:blocks/Vanilla/jungle_log",
-		"5": "bb:blocks/Vanilla/jungle_planks"
+		"4": "bb:blocks/vanilla/jungle_log",
+		"5": "bb:blocks/vanilla/jungle_planks"
 	},
 	"elements": [
 		{

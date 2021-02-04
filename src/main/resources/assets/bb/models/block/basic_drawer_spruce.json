@@ -2,8 +2,8 @@
 	"credit": "Made with Blockbench",
 	"textures": {
 		"2": "bb:blocks/vanilla/gray_concrete",
-		"4": "bb:blocks/Vanilla/spruce_log",
-		"5": "bb:blocks/Vanilla/spruce_planks"
+		"4": "bb:blocks/vanilla/spruce_log",
+		"5": "bb:blocks/vanilla/spruce_planks"
 	},
 	"elements": [
 		{

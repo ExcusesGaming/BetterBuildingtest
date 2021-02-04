@@ -1,6 +1,5 @@
 package com.excuses.betterbuilding.registry;
 
-import com.excuses.betterbuilding.registry.Entities.Block.BasicCabinetBlockEntity;
 import com.excuses.betterbuilding.registry.Entities.Block.BasicDrawerBlockEntity;
 import net.minecraft.block.*;
 import net.minecraft.block.entity.BlockEntity;

@@ -3,7 +3,7 @@
 	"textures": {
 		"0": "bb:blocks/framing_block",
 		"2": "bb:blocks/vanilla/gray_concrete",
-		"3": "bb:blocks/Vanilla/oak_log",
+		"3": "bb:blocks/vanilla/oak_log",
 		"particle": "bb:blocks/framing_block"
 	},
 	"elements": [

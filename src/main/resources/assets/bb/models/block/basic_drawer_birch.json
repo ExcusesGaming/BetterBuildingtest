@@ -2,9 +2,9 @@
 	"credit": "Made with Blockbench",
 	"textures": {
 		"2": "bb:blocks/vanilla/gray_concrete",
-		"3": "bb:blocks/Vanilla/birch_log",
-		"6": "bb:blocks/Vanilla/birch_planks",
-		"particle": "bb:blocks/Vanilla/birch_log"
+		"3": "bb:blocks/vanilla/birch_log",
+		"6": "bb:blocks/vanilla/birch_planks",
+		"particle": "bb:blocks/vanilla/birch_log"
 	},
 	"elements": [
 		{

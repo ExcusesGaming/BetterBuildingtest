@@ -33,15 +33,9 @@ public class BasicDrawerScreenHandler extends ScreenHandler {
         int m;
         int l;
         //Our inventory
-        for (m = 0; m < 1; ++m) {
+        for (m = 0; m < 2; ++m) {
             for (l = 0; l < 4; ++l) {
-                this.addSlot(new Slot(inventory, l + m * 1, 53 + l * 18, 17 + m * 18));
-            }
-        }
-
-        for (m = 0; m < 1; ++m) {
-            for (l = 0; l < 4; ++l) {
-                this.addSlot(new Slot(inventory, l + m * 1, 53 + l * 18, 42 + m * 18));
+                this.addSlot(new Slot(inventory, l + m * 4, 53 + l * 18, 17 + m * 36));
             }
         }
         //The player inventory
