@@ -13,13 +13,19 @@ import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
-import static com.excuses.betterbuilding.BetterBuilding.*;
+import static com.excuses.betterbuilding.BetterBuildingIdentifiers.*;
 
 
 public class ModBlocks {
 
     //BUILDING
     public static final Block FRAMING_BLOCK = new FrameBlock(FabricBlockSettings.of(Material.WOOD)
+            .breakByTool(FabricToolTags.AXES)
+            .requiresTool()
+            .strength(1.0f, 1.0f)
+            .sounds(BlockSoundGroup.WOOD)
+            .dynamicBounds());
+    public static final Block FLOOR_FRAMING_BLOCK = new FloorFrameBlock(FabricBlockSettings.of(Material.WOOD)
             .breakByTool(FabricToolTags.AXES)
             .requiresTool()
             .strength(1.0f, 1.0f)
@@ -148,10 +154,32 @@ public class ModBlocks {
             .sounds(BlockSoundGroup.WOOD)
             .nonOpaque()
             .dynamicBounds());
+    public static final Block BASIC_DRAWER_SPRUCE = new BasicDrawer(FabricBlockSettings.of(Material.WOOD)
+            .breakByTool(FabricToolTags.AXES)
+            .requiresTool()
+            .strength(1.0f, 1.0f)
+            .sounds(BlockSoundGroup.WOOD)
+            .nonOpaque()
+            .dynamicBounds());
+    public static final Block BASIC_DRAWER_BIRCH = new BasicDrawer(FabricBlockSettings.of(Material.WOOD)
+            .breakByTool(FabricToolTags.AXES)
+            .requiresTool()
+            .strength(1.0f, 1.0f)
+            .sounds(BlockSoundGroup.WOOD)
+            .nonOpaque()
+            .dynamicBounds());
+    public static final Block BASIC_DRAWER_JUNGLE = new BasicDrawer(FabricBlockSettings.of(Material.WOOD)
+            .breakByTool(FabricToolTags.AXES)
+            .requiresTool()
+            .strength(1.0f, 1.0f)
+            .sounds(BlockSoundGroup.WOOD)
+            .nonOpaque()
+            .dynamicBounds());
 
 
     public static void registerBlocks() {
         Registry.register(Registry.BLOCK, new Identifier(BetterBuilding.MOD_ID, "framing_block"), FRAMING_BLOCK);
+        Registry.register(Registry.BLOCK, new Identifier(BetterBuilding.MOD_ID, "floor_framing_block"), FLOOR_FRAMING_BLOCK);
         Registry.register(Registry.BLOCK, new Identifier(BetterBuilding.MOD_ID, "sheetrock_framing_block"), SHEETROCK_FRAMING_BLOCK);
         Registry.register(Registry.BLOCK, new Identifier(BetterBuilding.MOD_ID, "window_block_basic"), WINDOW_BLOCK_BASIC);
         Registry.register(Registry.BLOCK, new Identifier(BetterBuilding.MOD_ID, "door_bottom"), DOOR_BOTTOM);
@@ -171,6 +199,9 @@ public class ModBlocks {
         Registry.register(Registry.BLOCK, JungleCabinet, BASIC_CABINET_JUNGLE);
 
         Registry.register(Registry.BLOCK, OakDrawer, BASIC_DRAWER_OAK);
+        Registry.register(Registry.BLOCK, SpruceDrawer, BASIC_DRAWER_SPRUCE);
+        Registry.register(Registry.BLOCK, BirchDrawer, BASIC_DRAWER_BIRCH);
+        Registry.register(Registry.BLOCK, JungleDrawer, BASIC_DRAWER_JUNGLE);
 
     }
 }

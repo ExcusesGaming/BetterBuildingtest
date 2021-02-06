@@ -45,6 +45,9 @@ public class DeskLampColored extends Block {
         else if(!Powered && player.getMainHandStack().getItem() == Items.AIR) {
             world.setBlockState(pos, ModBlocks.DESK_LAMP_COLORED_POWERED.getDefaultState().with(LAMPSHADE, Lampshade).with(POWERED, true), 3);
         }
+        if(player.getMainHandStack().getItem() == ModItems.WHITEPAINT || player.getMainHandStack().getItem() == ModItems.ORANGEPAINT || player.getMainHandStack().getItem() == ModItems.MAGENTAPAINT || player.getMainHandStack().getItem() == ModItems.LIGHTBLUEPAINT || player.getMainHandStack().getItem() == ModItems.YELLOWPAINT || player.getMainHandStack().getItem() == ModItems.LIMEPAINT || player.getMainHandStack().getItem() == ModItems.PINKPAINT || player.getMainHandStack().getItem() == ModItems.GRAYPAINT || player.getMainHandStack().getItem() == ModItems.LIGHTGRAYPAINT || player.getMainHandStack().getItem() == ModItems.CYANPAINT || player.getMainHandStack().getItem() == ModItems.PURPLEPAINT || player.getMainHandStack().getItem() == ModItems.BLUEPAINT || player.getMainHandStack().getItem() == ModItems.BROWNPAINT || player.getMainHandStack().getItem() == ModItems.GREENPAINT || player.getMainHandStack().getItem() == ModItems.REDPAINT || player.getMainHandStack().getItem() == ModItems.BLACKPAINT) {
+            PaintItem.useOnPaintableBlock(world, pos, player);
+        }
         return ActionResult.SUCCESS;
     }
 

@@ -8,12 +8,15 @@ import net.minecraft.item.ToolItem;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
-import static com.excuses.betterbuilding.BetterBuilding.*;
+import static com.excuses.betterbuilding.BetterBuildingIdentifiers.*;
 
 public class ModItems {
     //Items
     public static final Item PLYWOOD = new BasicItem();
     public static final Item SHEETROCK = new BasicItem();
+
+    public static final ToolItem IRONHAMMER = new HammerItem(HammerMaterial.INSTANCE,new Item.Settings().group(BetterBuilding.ITEM_GROUP));
+
     public static final Item PAINTBUCKET = new BasicItem();
     public static final ToolItem WHITEPAINT = new PaintItem(PaintMaterial.INSTANCE, 0, new Item.Settings().group(BetterBuilding.ITEM_GROUP));
     public static final ToolItem ORANGEPAINT = new PaintItem(PaintMaterial.INSTANCE,1, new Item.Settings().group(BetterBuilding.ITEM_GROUP));
@@ -54,10 +57,16 @@ public class ModItems {
     public static final BlockItem BASIC_CABINET_JUNGLE = new BlockItem(ModBlocks.BASIC_CABINET_JUNGLE, new Item.Settings().group(BetterBuilding.ITEM_GROUP));
 
     public static final BlockItem BASIC_DRAWER_OAK = new BlockItem(ModBlocks.BASIC_DRAWER_OAK, new Item.Settings().group(BetterBuilding.ITEM_GROUP));
+    public static final BlockItem BASIC_DRAWER_SPRUCE = new BlockItem(ModBlocks.BASIC_DRAWER_SPRUCE, new Item.Settings().group(BetterBuilding.ITEM_GROUP));
+    public static final BlockItem BASIC_DRAWER_BIRCH = new BlockItem(ModBlocks.BASIC_DRAWER_BIRCH, new Item.Settings().group(BetterBuilding.ITEM_GROUP));
+    public static final BlockItem BASIC_DRAWER_JUNGLE = new BlockItem(ModBlocks.BASIC_DRAWER_JUNGLE, new Item.Settings().group(BetterBuilding.ITEM_GROUP));
 
     public static void registerItems(){
         Registry.register(Registry.ITEM, new Identifier(BetterBuilding.MOD_ID,  "plywood"), PLYWOOD);
         Registry.register(Registry.ITEM, new Identifier(BetterBuilding.MOD_ID,  "sheetrock"), SHEETROCK);
+
+        Registry.register(Registry.ITEM, new Identifier(BetterBuilding.MOD_ID,  "iron_hammer"), IRONHAMMER);
+
         //Paints
         Registry.register(Registry.ITEM, new Identifier(BetterBuilding.MOD_ID,  "paintbucket"), PAINTBUCKET);
         Registry.register(Registry.ITEM, new Identifier(BetterBuilding.MOD_ID,  "whitepaint"), WHITEPAINT);
@@ -97,6 +106,9 @@ public class ModItems {
         Registry.register(Registry.ITEM, JungleCabinet, BASIC_CABINET_JUNGLE);
 
         Registry.register(Registry.ITEM, OakDrawer, BASIC_DRAWER_OAK);
+        Registry.register(Registry.ITEM, SpruceDrawer, BASIC_DRAWER_SPRUCE);
+        Registry.register(Registry.ITEM, BirchDrawer, BASIC_DRAWER_BIRCH);
+        Registry.register(Registry.ITEM, JungleDrawer, BASIC_DRAWER_JUNGLE);
 
     }
 }
