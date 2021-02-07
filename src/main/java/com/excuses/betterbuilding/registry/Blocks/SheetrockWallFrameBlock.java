@@ -1,4 +1,4 @@
-package com.excuses.betterbuilding.registry;
+package com.excuses.betterbuilding.registry.Blocks;
 
 import it.unimi.dsi.fastutil.objects.Object2IntMap;
 import it.unimi.dsi.fastutil.objects.Object2IntOpenHashMap;

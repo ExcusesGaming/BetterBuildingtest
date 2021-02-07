@@ -1,16 +1,15 @@
-package com.excuses.betterbuilding.registry;
+package com.excuses.betterbuilding.registry.Blocks;
 
-import net.minecraft.block.Block;
-import net.minecraft.block.BlockState;
-import net.minecraft.block.HorizontalConnectingBlock;
-import net.minecraft.block.ShapeContext;
+import com.excuses.betterbuilding.registry.Blocks.SheetrockFrameBlock;
+import com.excuses.betterbuilding.registry.ModBlocks;
+import com.excuses.betterbuilding.registry.ModItems;
+import net.minecraft.block.*;
 import net.minecraft.entity.ai.pathing.NavigationType;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.fluid.FluidState;
 import net.minecraft.fluid.Fluids;
 import net.minecraft.item.ItemPlacementContext;
 import net.minecraft.state.StateManager;
-import net.minecraft.state.property.BooleanProperty;
 import net.minecraft.state.property.DirectionProperty;
 import net.minecraft.state.property.Properties;
 import net.minecraft.util.ActionResult;
@@ -25,11 +24,13 @@ import net.minecraft.world.WorldAccess;
 
 import java.util.Objects;
 
-public class FloorFrameBlock extends HorizontalConnectingBlock {
+
+public class Moulding extends HorizontalConnectingBlock {
+
     public static final DirectionProperty FACING;
     private final VoxelShape[] cullingShapes;
 
-    protected FloorFrameBlock(Settings settings) {
+    protected Moulding(Settings settings) {
         super(6.0F, 6.0F, 16.0F, 16.0F, 16.0F, settings);
         this.setDefaultState(this.stateManager.getDefaultState().with(NORTH, false).with(EAST, false).with(SOUTH, false).with(WEST, false).with(WATERLOGGED, false));
         this.cullingShapes = this.createShapes(2.0F, 1.0F, 16.0F, 14.0F, 15.0F);
@@ -37,10 +38,6 @@ public class FloorFrameBlock extends HorizontalConnectingBlock {
 
     static {
         FACING = Properties.FACING;
-    }
-
-    public VoxelShape getCullingShape(BlockState state, BlockView world, BlockPos pos) {
-        return this.cullingShapes[this.getShapeIndex(state)];
     }
 
     public VoxelShape getVisualShape(BlockState state, BlockView world, BlockPos pos, ShapeContext context) {
@@ -53,7 +50,7 @@ public class FloorFrameBlock extends HorizontalConnectingBlock {
 
     public boolean canConnect(BlockState state, boolean neighborIsFullSquare) {
         Block block = state.getBlock();
-        if (block == ModBlocks.FRAMING_BLOCK || block == ModBlocks.FLOOR_FRAMING_BLOCK|| block == ModBlocks.SHEETROCK_FRAMING_BLOCK || block == ModBlocks.WINDOW_BLOCK_BASIC || block == ModBlocks.DOOR_BOTTOM || block == ModBlocks.POCKETDOOR_BOTTOM || block == ModBlocks.POCKETDOORFRAME_BOTTOM) {
+        if (block == ModBlocks.FRAMING_BLOCK || block == ModBlocks.FLOOR_FRAMING_BLOCK || block == ModBlocks.SHEETROCK_FRAMING_BLOCK || block == ModBlocks.WINDOW_BLOCK_BASIC || block == ModBlocks.DOOR_BOTTOM || block == ModBlocks.POCKETDOOR_BOTTOM || block == ModBlocks.POCKETDOORFRAME_BOTTOM) {
             return !cannotConnect(block);
         }
         return cannotConnect(block);
@@ -115,5 +112,4 @@ public class FloorFrameBlock extends HorizontalConnectingBlock {
     protected void appendProperties(StateManager.Builder<Block, BlockState> builder) {
         builder.add(NORTH, EAST, WEST, SOUTH, WATERLOGGED, FACING);
     }
-
 }

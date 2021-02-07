@@ -1,5 +1,7 @@
-package com.excuses.betterbuilding.registry;
+package com.excuses.betterbuilding.registry.Blocks;
 
+import com.excuses.betterbuilding.registry.ModBlocks;
+import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.ShapeContext;
@@ -15,15 +17,16 @@ import net.minecraft.util.shape.VoxelShapes;
 import net.minecraft.world.BlockView;
 import net.minecraft.world.World;
 
-public class CeilingLightLit extends Block {
+public class CeilingLight extends Block {
 
     public static final BooleanProperty HARDENED = BooleanProperty.of("hardened");
+
     @Override
     protected void appendProperties(StateManager.Builder<Block, BlockState> stateManager) {
         stateManager.add(HARDENED);
     }
 
-    public CeilingLightLit(Settings settings) {
+    public CeilingLight(Settings settings) {
         super(settings);
         setDefaultState(getStateManager().getDefaultState().with(HARDENED, false));
     }
@@ -36,7 +39,7 @@ public class CeilingLightLit extends Block {
         }
         else {
             world.setBlockState(pos, state.with(HARDENED, true));
-            world.setBlockState(pos, ModBlocks.CEILING_LIGHT.getDefaultState(), 3);
+            world.setBlockState(pos, ModBlocks.CEILING_LIGHT_LIT.getDefaultState(), 3);
         }
         return ActionResult.SUCCESS;
     }

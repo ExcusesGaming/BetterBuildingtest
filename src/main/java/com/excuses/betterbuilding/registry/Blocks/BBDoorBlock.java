@@ -1,4 +1,4 @@
-package com.excuses.betterbuilding.registry;
+package com.excuses.betterbuilding.registry.Blocks;
 
 import net.minecraft.block.BlockState;
 import net.minecraft.block.DoorBlock;

@@ -1,4 +1,4 @@
-package com.excuses.betterbuilding.registry;
+package com.excuses.betterbuilding.registry.Items;
 
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.recipe.Ingredient;

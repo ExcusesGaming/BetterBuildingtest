@@ -1,5 +1,7 @@
-package com.excuses.betterbuilding.registry;
+package com.excuses.betterbuilding.registry.Blocks;
 
+import com.excuses.betterbuilding.registry.*;
+import com.excuses.betterbuilding.registry.Items.PaintItem;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.ShapeContext;
@@ -27,7 +29,7 @@ public class SheetrockFrameBlock extends SheetrockWallFrameBlock {
     public static final EightColorProperty ONWEST = EightColorProperty.of("onwest", 0);
     private final VoxelShape[] cullingShapes;
 
-    protected SheetrockFrameBlock(Settings settings) {
+    public SheetrockFrameBlock(Settings settings) {
         super(6.0F, 6.0F, 16.0F, 16.0F, 16.0F, settings);
         this.setDefaultState(this.stateManager.getDefaultState().with(NORTH, false).with(EAST, false).with(SOUTH, false).with(WEST, false).with(ONNORTH, 0).with(ONSOUTH, 0).with(ONEAST, 0).with(ONWEST, 0));
         this.cullingShapes = this.createShapes(2.0F, 1.0F, 16.0F, 14.0F, 15.0F);

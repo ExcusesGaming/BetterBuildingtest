@@ -1,9 +1,12 @@
 package com.excuses.betterbuilding.registry;
 
 import com.excuses.betterbuilding.BetterBuilding;
+import com.excuses.betterbuilding.registry.Items.HammerItem;
+import com.excuses.betterbuilding.registry.Items.HammerMaterial;
+import com.excuses.betterbuilding.registry.Items.PaintItem;
+import com.excuses.betterbuilding.registry.Items.PaintMaterial;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
-import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ToolItem;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
@@ -38,6 +41,7 @@ public class ModItems {
 
     //Block Items
     public static final BlockItem FRAMING_BLOCK = new BlockItem(ModBlocks.FRAMING_BLOCK, new Item.Settings().group(BetterBuilding.ITEM_GROUP));
+    public static final BlockItem FLOOR_FRAMING_BLOCK = new BlockItem(ModBlocks.FLOOR_FRAMING_BLOCK, new Item.Settings());
     public static final BlockItem SHEETROCK_FRAMING_BLOCK = new BlockItem(ModBlocks.SHEETROCK_FRAMING_BLOCK, new Item.Settings());
     public static final BlockItem WINDOW_BLOCK_BASIC = new BlockItem(ModBlocks.WINDOW_BLOCK_BASIC, new Item.Settings().group(BetterBuilding.ITEM_GROUP));
     public static final BlockItem DOOR_BOTTOM = new BlockItem(ModBlocks.DOOR_BOTTOM, new Item.Settings().group(BetterBuilding.ITEM_GROUP));
@@ -87,6 +91,7 @@ public class ModItems {
         Registry.register(Registry.ITEM, new Identifier(BetterBuilding.MOD_ID,  "blackpaint"), BLACKPAINT);
 
         Registry.register(Registry.ITEM, new Identifier(BetterBuilding.MOD_ID,  "framing_block"), FRAMING_BLOCK);
+        Registry.register(Registry.ITEM, new Identifier(BetterBuilding.MOD_ID,  "floor_framing_block"), FLOOR_FRAMING_BLOCK);
         Registry.register(Registry.ITEM, new Identifier(BetterBuilding.MOD_ID,  "sheetrock_framing_block"), SHEETROCK_FRAMING_BLOCK);
         Registry.register(Registry.ITEM, new Identifier(BetterBuilding.MOD_ID,  "window_block_basic"), WINDOW_BLOCK_BASIC);
         Registry.register(Registry.ITEM, new Identifier(BetterBuilding.MOD_ID,  "door_bottom"), DOOR_BOTTOM);

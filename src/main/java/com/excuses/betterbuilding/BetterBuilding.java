@@ -2,6 +2,8 @@ package com.excuses.betterbuilding;
 
 
 import com.excuses.betterbuilding.registry.*;
+import com.excuses.betterbuilding.registry.ScreenHandlers.BasicCabinetScreenHandler;
+import com.excuses.betterbuilding.registry.ScreenHandlers.BasicDrawerScreenHandler;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
 import net.fabricmc.fabric.api.client.itemgroup.FabricItemGroupBuilder;

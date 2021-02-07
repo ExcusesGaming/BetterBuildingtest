@@ -1,4 +1,4 @@
-package com.excuses.betterbuilding.registry;
+package com.excuses.betterbuilding.registry.Blocks;
 
 import com.excuses.betterbuilding.registry.Entities.Block.BasicCabinetBlockEntity;
 import net.minecraft.block.*;

@@ -1,7 +1,7 @@
 package com.excuses.betterbuilding;
 
-import com.excuses.betterbuilding.registry.BasicCabinetScreen;
-import com.excuses.betterbuilding.registry.BasicDrawerScreen;
+import com.excuses.betterbuilding.registry.Screens.BasicCabinetScreen;
+import com.excuses.betterbuilding.registry.Screens.BasicDrawerScreen;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.client.screenhandler.v1.ScreenRegistry;
 

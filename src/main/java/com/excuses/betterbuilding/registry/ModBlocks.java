@@ -1,14 +1,12 @@
 package com.excuses.betterbuilding.registry;
 
 import com.excuses.betterbuilding.BetterBuilding;
+import com.excuses.betterbuilding.registry.Blocks.*;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.fabricmc.fabric.api.tool.attribute.v1.FabricToolTags;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.Material;
-import net.minecraft.block.MaterialColor;
-import net.minecraft.block.entity.BlockEntity;
-import net.minecraft.block.piston.PistonBehavior;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
@@ -64,7 +62,7 @@ public class ModBlocks {
             .nonOpaque()
             .dynamicBounds());
 
-    public static final Block WINDOW_BLOCK_BASIC = new Moulding(FabricBlockSettings
+    public static final Block WINDOW_BLOCK_BASIC = new WindowBlockBasic(FabricBlockSettings
             .copyOf(Blocks.GLASS));
 
     //Furniture

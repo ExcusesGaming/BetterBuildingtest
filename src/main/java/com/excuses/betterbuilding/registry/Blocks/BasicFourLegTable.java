@@ -1,5 +1,6 @@
-package com.excuses.betterbuilding.registry;
+package com.excuses.betterbuilding.registry.Blocks;
 
+import com.excuses.betterbuilding.registry.ModBlocks;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.HorizontalConnectingBlock;
@@ -25,7 +26,7 @@ import java.util.Objects;
 public class BasicFourLegTable extends HorizontalConnectingBlock {
     private final VoxelShape[] cullingShapes;
 
-    protected BasicFourLegTable(Settings settings) {
+    public BasicFourLegTable(Settings settings) {
         super(8.0F, 8.0F, 14.0F, 14.0F, 16.0F, settings);
         this.setDefaultState(this.stateManager.getDefaultState().with(NORTH, false).with(EAST, false).with(SOUTH, false).with(WEST, false).with(WATERLOGGED, false));
         this.cullingShapes = this.createShapes(2.0F, 1.0F, 14.0F, 14.0F, 15.0F);

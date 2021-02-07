@@ -1,8 +1,9 @@
-package com.excuses.betterbuilding.registry;
+package com.excuses.betterbuilding.registry.Items;
 
+import com.excuses.betterbuilding.registry.Blocks.SheetrockFrameBlock;
+import com.excuses.betterbuilding.registry.ModBlocks;
 import net.minecraft.block.BlockState;
 import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.item.Item;
 import net.minecraft.item.ToolItem;
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.util.math.BlockPos;

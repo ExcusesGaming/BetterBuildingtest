@@ -1,6 +1,6 @@
 package com.excuses.betterbuilding.registry.Entities.Block;
 
-import com.excuses.betterbuilding.registry.BasicCabinetScreenHandler;
+import com.excuses.betterbuilding.registry.ScreenHandlers.BasicCabinetScreenHandler;
 import com.excuses.betterbuilding.registry.ImplementedInventory;
 import com.excuses.betterbuilding.registry.ModBlockEntities;
 import net.minecraft.block.BlockState;

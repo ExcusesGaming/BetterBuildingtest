@@ -1,4 +1,4 @@
-package com.excuses.betterbuilding.registry;
+package com.excuses.betterbuilding.registry.ScreenHandlers;
 
 import com.excuses.betterbuilding.BetterBuilding;
 import net.minecraft.entity.player.PlayerEntity;
@@ -9,21 +9,21 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.screen.ScreenHandler;
 import net.minecraft.screen.slot.Slot;
 
-public class BasicCabinetScreenHandler extends ScreenHandler {
+public class BasicDrawerScreenHandler extends ScreenHandler {
     private final Inventory inventory;
 
     //This constructor gets called on the client when the server wants it to open the screenHandler,
     //The client will call the other constructor with an empty Inventory and the screenHandler will automatically
     //sync this empty inventory with the inventory on the server.
-    public BasicCabinetScreenHandler(int syncId, PlayerInventory playerInventory) {
-        this(syncId, playerInventory, new SimpleInventory(12));
+    public BasicDrawerScreenHandler(int syncId, PlayerInventory playerInventory) {
+        this(syncId, playerInventory, new SimpleInventory(8));
     }
 
     //This constructor gets called from the BlockEntity on the server without calling the other constructor first, the server knows the inventory of the container
     //and can therefore directly provide it as an argument. This inventory will then be synced to the client.
-    public BasicCabinetScreenHandler(int syncId, PlayerInventory playerInventory, Inventory inventory) {
-        super(BetterBuilding.BASIC_CABINET_SCREEN_HANDLER, syncId);
-        checkSize(inventory, 12);
+    public BasicDrawerScreenHandler(int syncId, PlayerInventory playerInventory, Inventory inventory) {
+        super(BetterBuilding.BASIC_DRAWER_SCREEN_HANDLER, syncId);
+        checkSize(inventory, 8);
         this.inventory = inventory;
         //some inventories do custom logic when a player opens it.
         inventory.onOpen(playerInventory.player);
@@ -33,9 +33,9 @@ public class BasicCabinetScreenHandler extends ScreenHandler {
         int m;
         int l;
         //Our inventory
-        for (m = 0; m < 3; ++m) {
+        for (m = 0; m < 2; ++m) {
             for (l = 0; l < 4; ++l) {
-                this.addSlot(new Slot(inventory, l + m * 4, 53 + l * 18, 17 + m * 18));
+                this.addSlot(new Slot(inventory, l + m * 4, 53 + l * 18, 17 + m * 36));
             }
         }
         //The player inventory
