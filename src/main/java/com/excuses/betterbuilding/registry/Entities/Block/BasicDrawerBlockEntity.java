@@ -1,7 +1,7 @@
 package com.excuses.betterbuilding.registry.Entities.Block;
 
 import com.excuses.betterbuilding.registry.ScreenHandlers.BasicDrawerScreenHandler;
-import com.excuses.betterbuilding.registry.ImplementedInventory;
+import com.excuses.betterbuilding.registry.Interfaces.ImplementedInventory;
 import com.excuses.betterbuilding.registry.ModBlockEntities;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.entity.BlockEntity;

@@ -2,6 +2,7 @@ package com.excuses.betterbuilding.registry.Blocks;
 
 import com.excuses.betterbuilding.registry.*;
 import com.excuses.betterbuilding.registry.Items.PaintItem;
+import com.excuses.betterbuilding.registry.Properties.EightColorProperty;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.ShapeContext;

@@ -1,0 +1,112 @@
+{
+  "multipart": [
+    {"when": {"north": "false", "south": "false", "east": "false", "west": "false"},
+    "apply": {"model": "bb:block/tables/basicfourleg/birch/basic_four_leg_table_single_birch", "uvlock":  true}
+    },
+    {"when": {"north": "true", "south": "false", "east": "false", "west": "false"},
+      "apply": {"model": "bb:block/tables/basicfourleg/birch/basic_four_leg_table_double_birch","y": 90, "uvlock":  true}
+    },
+    {"when": {"north": "false", "south": "true", "east": "false", "west": "false"},
+      "apply": {"model": "bb:block/tables/basicfourleg/birch/basic_four_leg_table_double_birch","y": 270, "uvlock":  true}
+    },
+    {"when": {"north": "false", "south": "false", "east": "true", "west": "false"},
+      "apply": {"model": "bb:block/tables/basicfourleg/birch/basic_four_leg_table_double_birch","y": 180, "uvlock":  true}
+    },
+    {"when": {"north": "false", "south": "false", "east": "false", "west": "true"},
+      "apply": {"model": "bb:block/tables/basicfourleg/birch/basic_four_leg_table_double_birch","y": 0, "uvlock":  true}
+    },
+    {"when": {"north": "true", "south": "true", "east": "false", "west": "false"},
+      "apply": {"model": "bb:block/tables/basicfourleg/birch/basic_four_leg_table_triple_straight_birch","y": 90, "uvlock":  true}
+    },
+    {"when": {"north": "false", "south": "false", "east": "true", "west": "true"},
+      "apply": {"model": "bb:block/tables/basicfourleg/birch/basic_four_leg_table_triple_straight_birch","y": 0, "uvlock":  true}
+    },
+
+    {"when": {"north": "true", "south": "false", "east": "true", "west": "false"},
+      "apply": {"model": "bb:block/tables/basicfourleg/birch/basic_four_leg_table_triple_corner_birch","y": 90, "uvlock":  true}
+    },
+    {"when": {"north": "true", "south": "false", "east": "false", "west": "true"},
+      "apply": {"model": "bb:block/tables/basicfourleg/birch/basic_four_leg_table_triple_corner_birch","y": 0, "uvlock":  true}
+    },
+    {"when": {"north": "false", "south": "true", "east": "true", "west": "false"},
+      "apply": {"model": "bb:block/tables/basicfourleg/birch/basic_four_leg_table_triple_corner_birch","y": 180, "uvlock":  true}
+    },
+    {"when": {"north": "false", "south": "true", "east": "false", "west": "true"},
+      "apply": {"model": "bb:block/tables/basicfourleg/birch/basic_four_leg_table_triple_corner_birch","y": 270, "uvlock":  true}
+    },
+
+    {"when": {"north": "true", "south": "true", "east": "true", "west": "false"},
+      "apply": {"model": "bb:block/tables/basicfourleg/birch/basic_four_leg_table_quadruple_birch","y": 90, "uvlock":  true}
+    },
+    {"when": {"north": "true", "south": "true", "east": "false", "west": "true"},
+      "apply": {"model": "bb:block/tables/basicfourleg/birch/basic_four_leg_table_quadruple_birch","y": 270, "uvlock":  true}
+    },
+    {"when": {"north": "true", "south": "false", "east": "true", "west": "true"},
+      "apply": {"model": "bb:block/tables/basicfourleg/birch/basic_four_leg_table_quadruple_birch","y": 0, "uvlock":  true}
+    },
+    {"when": {"north": "false", "south": "true", "east": "true", "west": "true"},
+      "apply": {"model": "bb:block/tables/basicfourleg/birch/basic_four_leg_table_quadruple_birch","y": 180, "uvlock":  true}
+    },
+
+    {"when": {"north": "true", "south": "true", "east": "true", "west": "true"},
+      "apply": {"model": "bb:block/tables/basicfourleg/birch/basic_four_leg_table_center_birch","y": 0, "uvlock":  true}
+    },
+
+    {"when": {"north": "false", "south": "false", "east": "false", "west": "false"},
+      "apply": {"model": "bb:block/tables/basicfourleg/birch/basic_four_leg_table_leg_birch","y": 0, "uvlock":  true}
+    },
+    {"when": {"north": "false", "south": "false", "east": "false", "west": "false"},
+      "apply": {"model": "bb:block/tables/basicfourleg/birch/basic_four_leg_table_leg_birch","y": 90, "uvlock":  true}
+    },
+    {"when": {"north": "false", "south": "false", "east": "false", "west": "false"},
+      "apply": {"model": "bb:block/tables/basicfourleg/birch/basic_four_leg_table_leg_birch","y": 180, "uvlock":  true}
+    },
+    {"when": {"north": "false", "south": "false", "east": "false", "west": "false"},
+      "apply": {"model": "bb:block/tables/basicfourleg/birch/basic_four_leg_table_leg_birch","y": 270, "uvlock":  true}
+    },
+
+    {"when": {"north": "true", "south": "false", "east": "false", "west": "false"},
+      "apply": {"model": "bb:block/tables/basicfourleg/birch/basic_four_leg_table_leg_birch","y": 180, "uvlock":  true}
+    },
+    {"when": {"north": "true", "south": "false", "east": "false", "west": "false"},
+      "apply": {"model": "bb:block/tables/basicfourleg/birch/basic_four_leg_table_leg_birch","y": 270, "uvlock":  true}
+    },
+
+    {"when": {"north": "false", "south": "true", "east": "false", "west": "false"},
+      "apply": {"model": "bb:block/tables/basicfourleg/birch/basic_four_leg_table_leg_birch","y": 0, "uvlock":  true}
+    },
+    {"when": {"north": "false", "south": "true", "east": "false", "west": "false"},
+      "apply": {"model": "bb:block/tables/basicfourleg/birch/basic_four_leg_table_leg_birch","y": 90, "uvlock":  true}
+    },
+
+    {"when": {"north": "false", "south": "false", "east": "true", "west": "false"},
+      "apply": {"model": "bb:block/tables/basicfourleg/birch/basic_four_leg_table_leg_birch","y": 0, "uvlock":  true}
+    },
+    {"when": {"north": "false", "south": "false", "east": "true", "west": "false"},
+      "apply": {"model": "bb:block/tables/basicfourleg/birch/basic_four_leg_table_leg_birch","y": 270, "uvlock":  true}
+    },
+
+    {"when": {"north": "false", "south": "false", "east": "false", "west": "true"},
+      "apply": {"model": "bb:block/tables/basicfourleg/birch/basic_four_leg_table_leg_birch","y": 90, "uvlock":  true}
+    },
+    {"when": {"north": "false", "south": "false", "east": "false", "west": "true"},
+      "apply": {"model": "bb:block/tables/basicfourleg/birch/basic_four_leg_table_leg_birch","y": 180, "uvlock":  true}
+    },
+
+    {"when": {"north": "true", "south": "false", "east": "true", "west": "false"},
+      "apply": {"model": "bb:block/tables/basicfourleg/birch/basic_four_leg_table_leg_birch","y": 270, "uvlock":  true}
+    },
+
+    {"when": {"north": "true", "south": "false", "east": "false", "west": "true"},
+      "apply": {"model": "bb:block/tables/basicfourleg/birch/basic_four_leg_table_leg_birch","y": 180, "uvlock":  true}
+    },
+
+    {"when": {"north": "false", "south": "true", "east": "true", "west": "false"},
+      "apply": {"model": "bb:block/tables/basicfourleg/birch/basic_four_leg_table_leg_birch","y": 0, "uvlock":  true}
+    },
+
+    {"when": {"north": "false", "south": "true", "east": "false", "west": "true"},
+      "apply": {"model": "bb:block/tables/basicfourleg/birch/basic_four_leg_table_leg_birch","y": 90, "uvlock":  true}
+    }
+  ]
+}

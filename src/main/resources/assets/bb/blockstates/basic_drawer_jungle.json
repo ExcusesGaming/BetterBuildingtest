@@ -1,8 +1,0 @@
-{
-  "variants": {
-    "facing=north": { "model": "bb:block/basic_drawer_jungle" ,"y": 0, "uvlock":  true},
-    "facing=east": { "model": "bb:block/basic_drawer_jungle" ,"y": 90, "uvlock":  true},
-    "facing=south": { "model": "bb:block/basic_drawer_jungle" ,"y": 180, "uvlock":  true},
-    "facing=west": { "model": "bb:block/basic_drawer_jungle" ,"y": 270, "uvlock":  true}
-  }
-}

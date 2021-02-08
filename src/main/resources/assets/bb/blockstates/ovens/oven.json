@@ -1,0 +1,12 @@
+{
+  "variants": {
+    "facing=north,lit=false": { "model": "bb:block/ovens/oven" ,"y": 0, "uvlock":  false},
+    "facing=east,lit=false": { "model": "bb:block/ovens/oven" ,"y": 90, "uvlock":  false},
+    "facing=south,lit=false": { "model": "bb:block/ovens/oven" ,"y": 180, "uvlock":  false},
+    "facing=west,lit=false": { "model": "bb:block/ovens/oven" ,"y": 270, "uvlock":  false},
+    "facing=north,lit=true": { "model": "bb:block/ovens/oven_lit" ,"y": 0, "uvlock":  false},
+    "facing=east,lit=true": { "model": "bb:block/ovens/oven_lit" ,"y": 90, "uvlock":  false},
+    "facing=south,lit=true": { "model": "bb:block/ovens/oven_lit" ,"y": 180, "uvlock":  false},
+    "facing=west,lit=true": { "model": "bb:block/ovens/oven_lit" ,"y": 270, "uvlock":  false}
+  }
+}

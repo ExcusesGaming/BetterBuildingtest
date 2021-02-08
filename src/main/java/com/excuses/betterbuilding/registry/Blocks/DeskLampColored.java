@@ -1,6 +1,6 @@
 package com.excuses.betterbuilding.registry.Blocks;
 
-import com.excuses.betterbuilding.registry.ColorProperty;
+import com.excuses.betterbuilding.registry.Properties.ColorProperty;
 import com.excuses.betterbuilding.registry.ModBlocks;
 import com.excuses.betterbuilding.registry.ModItems;
 import com.excuses.betterbuilding.registry.Items.PaintItem;

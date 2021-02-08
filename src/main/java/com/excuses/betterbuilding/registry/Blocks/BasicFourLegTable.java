@@ -46,7 +46,7 @@ public class BasicFourLegTable extends HorizontalConnectingBlock {
 
     public boolean canConnect(BlockState state, boolean neighborIsFullSquare) {
         Block block = state.getBlock();
-        if (block == ModBlocks.BASIC_TABLE_OAK || block == ModBlocks.BASIC_TABLE_SPRUCE) {
+        if (block == ModBlocks.BASIC_TABLE_OAK || block == ModBlocks.BASIC_TABLE_SPRUCE || block == ModBlocks.BASIC_TABLE_BIRCH) {
             return !cannotConnect(block);
         }
         return cannotConnect(block);

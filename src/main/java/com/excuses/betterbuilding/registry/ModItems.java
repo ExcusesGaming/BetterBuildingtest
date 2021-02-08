@@ -1,10 +1,7 @@
 package com.excuses.betterbuilding.registry;
 
 import com.excuses.betterbuilding.BetterBuilding;
-import com.excuses.betterbuilding.registry.Items.HammerItem;
-import com.excuses.betterbuilding.registry.Items.HammerMaterial;
-import com.excuses.betterbuilding.registry.Items.PaintItem;
-import com.excuses.betterbuilding.registry.Items.PaintMaterial;
+import com.excuses.betterbuilding.registry.Items.*;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ToolItem;
@@ -52,18 +49,30 @@ public class ModItems {
     public static final BlockItem CEILING_LIGHT_LIT = new BlockItem(ModBlocks.CEILING_LIGHT_LIT, new Item.Settings());
     public static final BlockItem DESK_LAMP_COLORED = new BlockItem(ModBlocks.DESK_LAMP_COLORED, new Item.Settings().group(BetterBuilding.ITEM_GROUP));
     public static final BlockItem DESK_LAMP_COLORED_POWERED = new BlockItem(ModBlocks.DESK_LAMP_COLORED_POWERED, new Item.Settings());
+
     public static final BlockItem BASIC_TABLE_OAK = new BlockItem(ModBlocks.BASIC_TABLE_OAK, new Item.Settings().group(BetterBuilding.ITEM_GROUP));
     public static final BlockItem BASIC_TABLE_SPRUCE = new BlockItem(ModBlocks.BASIC_TABLE_SPRUCE, new Item.Settings().group(BetterBuilding.ITEM_GROUP));
+    public static final BlockItem BASIC_TABLE_BIRCH = new BlockItem(ModBlocks.BASIC_TABLE_BIRCH, new Item.Settings().group(BetterBuilding.ITEM_GROUP));
 
     public static final BlockItem BASIC_CABINET_OAK = new BlockItem(ModBlocks.BASIC_CABINET_OAK, new Item.Settings().group(BetterBuilding.ITEM_GROUP));
     public static final BlockItem BASIC_CABINET_SPRUCE = new BlockItem(ModBlocks.BASIC_CABINET_SPRUCE, new Item.Settings().group(BetterBuilding.ITEM_GROUP));
     public static final BlockItem BASIC_CABINET_BIRCH = new BlockItem(ModBlocks.BASIC_CABINET_BIRCH, new Item.Settings().group(BetterBuilding.ITEM_GROUP));
     public static final BlockItem BASIC_CABINET_JUNGLE = new BlockItem(ModBlocks.BASIC_CABINET_JUNGLE, new Item.Settings().group(BetterBuilding.ITEM_GROUP));
+    public static final BlockItem BASIC_CABINET_ACACIA = new BlockItem(ModBlocks.BASIC_CABINET_ACACIA, new Item.Settings().group(BetterBuilding.ITEM_GROUP));
+    public static final BlockItem BASIC_CABINET_DARK_OAK = new BlockItem(ModBlocks.BASIC_CABINET_DARK_OAK, new Item.Settings().group(BetterBuilding.ITEM_GROUP));
+    public static final BlockItem BASIC_CABINET_CRIMSON = new BlockItem(ModBlocks.BASIC_CABINET_CRIMSON, new Item.Settings().group(BetterBuilding.ITEM_GROUP));
+    public static final BlockItem BASIC_CABINET_WARPED = new BlockItem(ModBlocks.BASIC_CABINET_WARPED, new Item.Settings().group(BetterBuilding.ITEM_GROUP));
 
     public static final BlockItem BASIC_DRAWER_OAK = new BlockItem(ModBlocks.BASIC_DRAWER_OAK, new Item.Settings().group(BetterBuilding.ITEM_GROUP));
     public static final BlockItem BASIC_DRAWER_SPRUCE = new BlockItem(ModBlocks.BASIC_DRAWER_SPRUCE, new Item.Settings().group(BetterBuilding.ITEM_GROUP));
     public static final BlockItem BASIC_DRAWER_BIRCH = new BlockItem(ModBlocks.BASIC_DRAWER_BIRCH, new Item.Settings().group(BetterBuilding.ITEM_GROUP));
     public static final BlockItem BASIC_DRAWER_JUNGLE = new BlockItem(ModBlocks.BASIC_DRAWER_JUNGLE, new Item.Settings().group(BetterBuilding.ITEM_GROUP));
+    public static final BlockItem BASIC_DRAWER_ACACIA = new BlockItem(ModBlocks.BASIC_DRAWER_ACACIA, new Item.Settings().group(BetterBuilding.ITEM_GROUP));
+    public static final BlockItem BASIC_DRAWER_DARK_OAK = new BlockItem(ModBlocks.BASIC_DRAWER_DARK_OAK, new Item.Settings().group(BetterBuilding.ITEM_GROUP));
+    public static final BlockItem BASIC_DRAWER_CRIMSON = new BlockItem(ModBlocks.BASIC_DRAWER_CRIMSON, new Item.Settings().group(BetterBuilding.ITEM_GROUP));
+    public static final BlockItem BASIC_DRAWER_WARPED = new BlockItem(ModBlocks.BASIC_DRAWER_WARPED, new Item.Settings().group(BetterBuilding.ITEM_GROUP));
+
+    public static final BlockItem OVEN = new BlockItem(ModBlocks.OVEN, new Item.Settings().group(BetterBuilding.ITEM_GROUP));
 
     public static void registerItems(){
         Registry.register(Registry.ITEM, new Identifier(BetterBuilding.MOD_ID,  "plywood"), PLYWOOD);
@@ -100,20 +109,33 @@ public class ModItems {
 
         Registry.register(Registry.ITEM, new Identifier(BetterBuilding.MOD_ID,  "ceiling_light"), CEILING_LIGHT);
         Registry.register(Registry.ITEM, new Identifier(BetterBuilding.MOD_ID,  "ceiling_light_lit"), CEILING_LIGHT_LIT);
+
         Registry.register(Registry.ITEM, new Identifier(BetterBuilding.MOD_ID,  "desk_lamp_colored"), DESK_LAMP_COLORED);
         Registry.register(Registry.ITEM, new Identifier(BetterBuilding.MOD_ID,  "desk_lamp_colored_powered"), DESK_LAMP_COLORED_POWERED);
-        Registry.register(Registry.ITEM, new Identifier(BetterBuilding.MOD_ID,  "basic_four_leg_table_oak"), BASIC_TABLE_OAK);
-        Registry.register(Registry.ITEM, new Identifier(BetterBuilding.MOD_ID,  "basic_four_leg_table_spruce"), BASIC_TABLE_SPRUCE);
+
+        Registry.register(Registry.ITEM, BasicFourLegTableOak, BASIC_TABLE_OAK);
+        Registry.register(Registry.ITEM, BasicFourLegTableSpruce, BASIC_TABLE_SPRUCE);
+        Registry.register(Registry.ITEM, BasicFourLegTableBirch, BASIC_TABLE_BIRCH);
 
         Registry.register(Registry.ITEM, OakCabinet, BASIC_CABINET_OAK);
         Registry.register(Registry.ITEM, SpruceCabinet, BASIC_CABINET_SPRUCE);
         Registry.register(Registry.ITEM, BirchCabinet, BASIC_CABINET_BIRCH);
         Registry.register(Registry.ITEM, JungleCabinet, BASIC_CABINET_JUNGLE);
+        Registry.register(Registry.ITEM, AcaciaCabinet, BASIC_CABINET_ACACIA);
+        Registry.register(Registry.ITEM, DarkOakCabinet, BASIC_CABINET_DARK_OAK);
+        Registry.register(Registry.ITEM, CrimsonCabinet, BASIC_CABINET_CRIMSON);
+        Registry.register(Registry.ITEM, WarpedCabinet, BASIC_CABINET_WARPED);
 
         Registry.register(Registry.ITEM, OakDrawer, BASIC_DRAWER_OAK);
         Registry.register(Registry.ITEM, SpruceDrawer, BASIC_DRAWER_SPRUCE);
         Registry.register(Registry.ITEM, BirchDrawer, BASIC_DRAWER_BIRCH);
         Registry.register(Registry.ITEM, JungleDrawer, BASIC_DRAWER_JUNGLE);
+        Registry.register(Registry.ITEM, AcaciaDrawer, BASIC_DRAWER_ACACIA);
+        Registry.register(Registry.ITEM, DarkOakDrawer, BASIC_DRAWER_DARK_OAK);
+        Registry.register(Registry.ITEM, CrimsonDrawer, BASIC_DRAWER_CRIMSON);
+        Registry.register(Registry.ITEM, WarpedDrawer, BASIC_DRAWER_WARPED);
+
+        Registry.register(Registry.ITEM, Oven, OVEN);
 
     }
 }

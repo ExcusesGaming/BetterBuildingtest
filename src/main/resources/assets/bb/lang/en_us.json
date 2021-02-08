@@ -1,10 +1,36 @@
 {
   "itemGroup.bb.general": "Better Building",
   "item.bb.test": "Test",
+  "item.bb.iron_hammer": "Iron Hammer",
+  "item.bb.plywood": "Plywood",
+  "item.bb.sheetrock": "Sheetrock",
+  "item.bb.paintbucket": "Empty Paint Bucket",
+  "item.bb.whitepaint": "White Paint Bucket",
+  "item.bb.orangepaint": "Orange Paint Bucket",
+  "item.bb.magentapaint": "Magenta Paint Bucket",
   "block.bb.framing_block": "Framing Block",
-  "block.bb.framing_block_plywood": "Framing Block Plywood+",
-  "block.bb.basic_cabinet_oak": "Basic Oak Cabinet",
-  "block.bb.basic_cabinet_spruce": "Basic Spruce Cabinet",
-  "block.bb.basic_cabinet_birch": "Basic Birch Cabinet",
-  "block.bb.basic_cabinet_jungle": "Basic Jungle Cabinet"
+  "block.bb.framing_block_plywood": "Framing Block Plywood",
+
+  "block.bb.tables.basicfourleg.oak.basic_four_leg_table_oak": "Basic Oak Table",
+  "block.bb.tables.basicfourleg.spruce.basic_four_leg_table_spruce": "Basic Spruce Table",
+
+  "block.bb.cabinets.basic_cabinet_oak": "Basic Oak Cabinet",
+  "block.bb.cabinets.basic_cabinet_spruce": "Basic Spruce Cabinet",
+  "block.bb.cabinets.basic_cabinet_birch": "Basic Birch Cabinet",
+  "block.bb.cabinets.basic_cabinet_jungle": "Basic Jungle Cabinet",
+  "block.bb.cabinets.basic_cabinet_acacia": "Basic Acacia Cabinet",
+  "block.bb.cabinets.basic_cabinet_dark_oak": "Basic Dark Oak Cabinet",
+  "block.bb.cabinets.basic_cabinet_crimson": "Basic Crimson Cabinet",
+  "block.bb.cabinets.basic_cabinet_warped": "Basic Warped Cabinet",
+
+  "block.bb.drawers.basic_drawer_oak": "Basic Oak Drawer",
+  "block.bb.drawers.basic_drawer_spruce": "Basic Spruce Drawer",
+  "block.bb.drawers.basic_drawer_birch": "Basic Birch Drawer",
+  "block.bb.drawers.basic_drawer_jungle": "Basic Jungle Drawer",
+  "block.bb.drawers.basic_drawer_acacia": "Basic Acacia Drawer",
+  "block.bb.drawers.basic_drawer_dark_oak": "Basic Dark Oak Drawer",
+  "block.bb.drawers.basic_drawer_crimson": "Basic Crimson Drawer",
+  "block.bb.drawers.basic_drawer_warped": "Basic Warped Drawer",
+
+  "block.bb.ovens.oven": "Oven"
 }

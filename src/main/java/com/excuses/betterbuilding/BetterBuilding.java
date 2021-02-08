@@ -44,6 +44,7 @@ public class BetterBuilding implements ModInitializer {
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.WINDOW_BLOCK_BASIC, RenderLayer.getTranslucent());
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.CEILING_LIGHT, RenderLayer.getTranslucent());
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.CEILING_LIGHT_LIT, RenderLayer.getTranslucent());
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.OVEN, RenderLayer.getTranslucent());
         modifyLootTables();
     }
 
